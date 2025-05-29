@@ -44,7 +44,30 @@
     <div class="input-group input-group-sm mb-3">
         <input type="text" class="form-control input-width" placeholder="Діаметер (мм)" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
     </div>
-    <button type="button" class="btn btn-primary fonts custom-btn">Розрахувати</button>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary fonts custom-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Розрахувати
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Довжина жилки бекінга складає:</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body custom-modal">
+                     185 метрів
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                    <button type="button" class="btn btn-primary">Зберегти результат</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Content here -->
 </div>

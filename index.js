@@ -1,3 +1,9 @@
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+})
 /**
  * Opens the sidebar navigation menu.
  * Sets the width of the sidebar to '250px' (or '100%' on small screens)
