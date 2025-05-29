@@ -148,18 +148,18 @@
 /* You would typically toggle a class on the burger div for this, e.g., .burger.open span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); } */
 
 /* Responsive adjustments */
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 1.1rem;}
-}
+/*@media screen and (max-height: 450px) {*/
+/*    .sidebar {padding-top: 15px;}*/
+/*    .sidebar a {font-size: 1.1rem;}*/
+/*}*/
 
-@media screen and (max-width: 640px) {
-    .sidebar.open {
-        width: 100%; /* Full width on small screens */
-        border-radius: 0; /* No rounded corners when full width */
-    }
-    .sidebar a {
-        text-align: center; /* Center links on small screens */
-    }
-}
+/*@media screen and (max-width: 640px) {*/
+/*    .sidebar.open {*/
+/*        width: 100%; !* Full width on small screens *!*/
+/*        border-radius: 0; !* No rounded corners when full width *!*/
+/*    }*/
+/*    .sidebar a {*/
+/*        text-align: center; !* Center links on small screens *!*/
+/*    }*/
+/*}*/
 
