@@ -50,21 +50,21 @@
 }
 
 /*------------*/
-body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f4f8; /* Light background */
-    overflow-x: hidden; /* Prevent horizontal scroll due to menu */
-}
+/*body {*/
+/*    font-family: "Inter", sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background-color: #f0f4f8; !* Light background *!*/
+/*    overflow-x: hidden; !* Prevent horizontal scroll due to menu *!*/
+/*}*/
 
 .sidebar {
     height: 100%;
-    width: 100vh; /* Initially closed */
+    width: 0; /* Initially closed */
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -79,7 +79,7 @@ body {
 }
 
 .sidebar.open {
-    width: 250px; /* Width when open */
+    width: 100%; /* Width when open */
 }
 
 .sidebar a {
