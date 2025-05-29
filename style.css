@@ -74,8 +74,8 @@
     transition: 0.5s; /* Smooth transition for opening/closing */
     padding-top: 60px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    border-top-left-radius: 1rem; /* Rounded corners */
-    border-bottom-left-radius: 1rem; /* Rounded corners */
+    /*border-top-left-radius: 1rem; !* Rounded corners *!*/
+    /*border-bottom-left-radius: 1rem; !* Rounded corners *!*/
 }
 
 .sidebar.open {
