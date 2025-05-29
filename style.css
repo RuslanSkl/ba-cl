@@ -49,3 +49,117 @@
     color: #fff;
 }
 
+/*------------*/
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8; /* Light background */
+    overflow-x: hidden; /* Prevent horizontal scroll due to menu */
+}
+
+.sidebar {
+    height: 100%;
+    width: 100vh; /* Initially closed */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    /*right: 0; !* Position from the right *!*/
+    background-color: #1a202c; /* Dark background for the menu */
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth transition for opening/closing */
+    padding-top: 60px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    border-top-left-radius: 1rem; /* Rounded corners */
+    border-bottom-left-radius: 1rem; /* Rounded corners */
+}
+
+.sidebar.open {
+    width: 250px; /* Width when open */
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.5rem; /* Larger font size for links */
+    color: #e2e8f0; /* Light text color */
+    display: block;
+    transition: 0.3s;
+    border-radius: 0.5rem; /* Rounded corners for links */
+    margin: 0.5rem 1rem; /* Spacing for links */
+}
+
+.sidebar a:hover {
+    color: #a0aec0; /* Lighter text on hover */
+    background-color: #2d3748; /* Darker background on hover */
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2.5rem; /* Larger cross icon */
+    margin-left: 50px;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 50%; /* Make it circular */
+}
+
+.sidebar .closebtn:hover {
+    color: #a0aec0;
+    background-color: #2d3748;
+}
+
+/* Burger menu icon styling */
+/*.burger {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-around;*/
+/*    width: 40px; !* Width of the burger icon *!*/
+/*    height: 30px; !* Height of the burger icon *!*/
+/*    cursor: pointer;*/
+/*    padding: 5px;*/
+/*    border-radius: 0.5rem; !* Rounded corners for the clickable area *!*/
+/*    background-color: #4a5568; !* Background for the burger icon *!*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); !* Subtle shadow *!*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.burger:hover {*/
+/*    background-color: #2d3748; !* Darker on hover *!*/
+/*}*/
+
+/*.burger span {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 4px; !* Height of each bar *!*/
+/*    background-color: white; !* Color of the bars *!*/
+/*    border-radius: 2px; !* Rounded ends for bars *!*/
+/*    transition: all 0.3s ease; !* Smooth transition for bar animations *!*/
+/*}*/
+
+/* Optional: Add transformations for an "X" when open, though not explicitly requested, it's common */
+/* You would typically toggle a class on the burger div for this, e.g., .burger.open span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); } */
+
+/* Responsive adjustments */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 640px) {
+    .sidebar.open {
+        width: 100%; /* Full width on small screens */
+        border-radius: 0; /* No rounded corners when full width */
+    }
+    .sidebar a {
+        text-align: center; /* Center links on small screens */
+    }
+}
+
