@@ -76,10 +76,11 @@
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     /*border-top-left-radius: 1rem; !* Rounded corners *!*/
     /*border-bottom-left-radius: 1rem; !* Rounded corners *!*/
+    border-radius: 1rem;
 }
 
 .sidebar.open {
-    width: 100%; /* Width when open */
+    width: 100px; /* Width when open */
 }
 
 .sidebar a {
