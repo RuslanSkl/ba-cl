@@ -80,7 +80,7 @@
 }
 
 .sidebar.open {
-    width: 100px; /* Width when open */
+    width: 70%!important; /* Width when open */
 }
 
 .sidebar a {
